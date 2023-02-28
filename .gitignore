@@ -1,0 +1,7 @@
+.vscode
+bin
+obj
+main.exe
+tictactoe.cbp
+tictactoe.depend
+tictactoe.layout
