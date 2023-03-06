@@ -27,10 +27,10 @@ int main(void){
 
   //main code
 
-  //create a matrix of 0 values.The values will replaced by the value of the player.
+  //create a matrix of zeros.The values will be replaced by the values of the players.
   matrix_t* Board_ofValues = matrix_ofZero(3,3);
 
-  //create a matrix of tokens. This matrix will be print with the players tokens.
+  //create a matrix of tokens. This matrix will be print with the tokens of the player.
   matrix_t* Board_ofTokens = matrix_ofSpaces(3,3);
 
   //creation of players with their token, value and target.
@@ -54,7 +54,7 @@ int main(void){
     //do this if there is not a winner or the turns are lower than nine.
     if(!player_win(playerOne) && !player_win(playerTwo) && gameStatus_getTurn(game)<9){
       
-      //print depend of player turn.
+      //print depend on player turn.
       if(gameStatus_getPlayerTurn(game)==1){
         printf("player one turn (%c)\n",player_getToken(playerOne));
       }
